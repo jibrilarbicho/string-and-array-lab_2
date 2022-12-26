@@ -23,6 +23,24 @@ void display(){
       System.out.println(wabi.length());
       System.out.println(check6);
    System.out.println(check7);
+   boolean check8=wabi.startsWith("j",0);
+   System.out.println(check8);
+   String ko=wabi.replace("ji", "ko");
+   System.out.println(ko);
+    String ji9=wabi.replace(wabi, "ko");
+   System.out.println(ji9);
+   String ji=wabi.replaceAll("ji", "ko");
+   System.out.println(ji);
+   boolean check9=wabi.matches("jimma");
+   System.out.println(check9);
+ String ki =wabi.trim();
+  System.out.println(ki); 
+   int kii =wabi.indexOf("a",4);
+  System.out.println(kii); 
+  String kk=wabi.substring( 3,4);
+   System.out.println(kk); 
+  
+  
    // two dimensional array
    int [][]a=new int[3][3];
   System.out.println("enter 9 elements of 1st array");
@@ -72,7 +90,7 @@ for(int i=0;i<b.length;i++)
   for(int i=0;i<b.length;i++){
      for(int j=0;j<b[i].length;j++){
          for(int k=0;k<3;k++){
-    mul[i][j]=mul[i][j]+a[i][k]*b[k][j]; 
+    mul[i][j]+=a[i][k]*b[k][j]; 
          }
   
          }
@@ -117,16 +135,8 @@ for(int i=0;i<b.length;i++)
     System.out.println(b[j][i]+"  ");
      }
    System.out.println(" ");
-    }
-   
-  
-       
+    }     
    } 
-    
-    
-    
-    
-    
     }
     
     
